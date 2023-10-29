@@ -1,0 +1,35 @@
+<div class="image">
+	<img width="302" height="302" src="assets/images/equilibrium.jpg" alt="" />
+</div>
+
+<div class="content">
+	<h2 class="title">
+		<a href="#" class="btn btn--link">{{ card.title }}</a>
+	</h2>
+	<p class="desc">
+		{{ card.description }}
+	</p>
+	<ul class="stats-list">
+		<li class="stats-list-item">
+			<i class="icon-ethereum" aria-hidden="true"></i>
+			<span>{{ card.ethereumAmount }} ETH</span>
+		</li>
+		<li class="stats-list-item">
+			<i class="icon-clock" aria-hidden="true"></i>
+			<span>{{ card.remainingTime }} days left</span>
+		</li>
+	</ul>
+	<div class="author">
+		<img
+			class="author-img"
+			width="33"
+			height="33"
+			[src]="card.author.imageSrc"
+			[alt]="card.author.name"
+		/>
+		<span class="author-desc"
+			>Creation of
+			<a href="#" class="btn btn--link">{{ card.author.name }}</a></span
+		>
+	</div>
+</div>

@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 
+import { ProjectService } from './shared/project.service';
+
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+	selector: 'app-root',
+	templateUrl: './app.component.html',
+	styleUrls: ['./app.component.css'],
+	providers: [ProjectService]
 })
-export class AppComponent {
-  title = 'fmentor-nft-angular-services';
-}
+export class AppComponent {}

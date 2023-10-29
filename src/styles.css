@@ -1,1 +1,138 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+	--color-soft-blue: hsl(215, 51%, 70%);
+	--color-cyan: hsl(178, 100%, 50%);
+	--color-cyan-light: hsla(178, 100%, 50%, 0.5);
+
+	--color-dark-blue-1: hsl(217, 54%, 11%);
+	--color-dark-blue-2: hsl(216, 50%, 16%);
+	--color-dark-blue-3: hsl(215, 32%, 27%);
+	--color-white: hsl(0, 0%, 100%);
+
+	--font-family-primary: 'Outfit', sans-serif;
+	--font-family-headings: 'Outfit', sans-serif;
+
+	--font-weight-300: 300;
+	--font-weight-400: 400;
+	--font-weight-600: 600;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	border: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-family-headings);
+	font-weight: var(--font-weight-600);
+	color: var(--color-soft-blue);
+	line-height: 1.2727;
+}
+
+h2 {
+	font-size: 1.375em;
+}
+
+h3 {
+	font-size: 1.25em;
+}
+
+h4 {
+	font-size: 1em;
+}
+
+h5 {
+	font-size: 0.9em;
+}
+
+h6 {
+	font-size: 0.8em;
+}
+
+p {
+	font-size: 1.125em;
+	font-weight: var(--font-weight-300);
+}
+
+strong {
+	font-weight: var(--font-weight-600);
+}
+
+body {
+	position: relative;
+	display: flex;
+	min-height: 100vh;
+	background-color: var(--color-dark-blue-1);
+	font-family: var(--font-family-primary);
+	-webkit-font-smoothing: antialiased;
+	font-size: 1em;
+	font-weight: var(--font-weight-400);
+	color: var(--color-soft-blue);
+	text-rendering: optimizeSpeed;
+	line-height: 1.4375;
+}
+
+.btn {
+	display: inline-flex;
+	text-decoration: none;
+}
+
+.btn--link {
+	color: var(--color-white);
+	transition: color 0.15s ease-in-out;
+}
+
+.btn--link:hover {
+	color: var(--color-cyan);
+}
+
+[class^='icon-'] {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.icon-ethereum {
+	width: 0.6875em;
+	height: 1.125em;
+	background-image: url('/assets/images/icons/ethereum.svg');
+}
+
+.icon-clock {
+	width: 1em;
+	height: 1em;
+	background-image: url('/assets/images/icons/clock.svg');
+}
