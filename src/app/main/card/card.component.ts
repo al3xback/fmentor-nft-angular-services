@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Card } from '../../shared/card';
-import { ProjectService } from '../../shared/project.service';
+import { BaseService } from '../../shared/base.service';
 
 @Component({
 	selector: 'app-card',
@@ -11,9 +11,9 @@ import { ProjectService } from '../../shared/project.service';
 export class CardComponent implements OnInit {
 	card: Card;
 
-	constructor(private projectService: ProjectService) {}
+	constructor(private baseService: BaseService) {}
 
 	ngOnInit() {
-		this.card = this.projectService.project.card;
+		this.card = this.baseService.card;
 	}
 }

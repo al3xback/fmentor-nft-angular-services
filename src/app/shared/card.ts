@@ -1,6 +1,7 @@
 export interface Card {
     title: string;
     description: string;
+    imageSrc: string;
     ethereumAmount: number;
     remainingTime: number;
     author: {

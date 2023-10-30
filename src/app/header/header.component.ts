@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ProjectService } from '../shared/project.service';
+import { BaseService } from '../shared/base.service';
 
 @Component({
 	selector: 'app-header',
@@ -8,11 +8,11 @@ import { ProjectService } from '../shared/project.service';
 	styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-	projectName: string;
+	title: string;
 
-	constructor(private projectService: ProjectService) {}
+	constructor(private baseService: BaseService) {}
 
 	ngOnInit() {
-		this.projectName = this.projectService.project.name;
+		this.title = this.baseService.challenge.name;
 	}
 }

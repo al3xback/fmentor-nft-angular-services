@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ProjectService } from '../shared/project.service';
+import { BaseService } from '../shared/base.service';
 
 @Component({
 	selector: 'app-footer',
@@ -11,10 +11,10 @@ export class FooterComponent implements OnInit {
 	creator: { name: string; link: string };
 	coder: { name: string; gitHubLink: string };
 
-	constructor(private projectService: ProjectService) {}
+	constructor(private baseService: BaseService) {}
 
 	ngOnInit() {
-		this.creator = this.projectService.project.creator;
-		this.coder = this.projectService.project.coder;
+		this.creator = this.baseService.challenge.creator;
+		this.coder = this.baseService.challenge.coder;
 	}
 }

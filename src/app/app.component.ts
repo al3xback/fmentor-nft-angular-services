@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
-import { ProjectService } from './shared/project.service';
+import { BaseService } from './shared/base.service';
 
 @Component({
 	selector: 'app-root',
 	templateUrl: './app.component.html',
 	styleUrls: ['./app.component.css'],
-	providers: [ProjectService]
+	providers: [BaseService]
 })
 export class AppComponent {}
