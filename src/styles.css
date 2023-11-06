@@ -109,12 +109,12 @@ body {
 	text-decoration: none;
 }
 
-.btn--link {
+.btn-link {
 	color: var(--color-white);
 	transition: color 0.15s ease-in-out;
 }
 
-.btn--link:hover {
+.btn-link:hover {
 	color: var(--color-cyan);
 }
 
