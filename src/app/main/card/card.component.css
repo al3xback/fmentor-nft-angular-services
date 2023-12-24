@@ -9,16 +9,16 @@
 	width: 100%;
 	max-width: 21.875em;
 	padding: 1.5em;
-	margin: 2.5em 0 3.75em;
 	background-color: var(--color-dark-blue-2);
+	margin: 2.5em 0 3.75em;
 	border-radius: 15px;
 	box-shadow: 0 1.5625em 3.125em rgba(0, 0, 0, 0.1);
 }
 
 .image {
 	position: relative;
-	margin-bottom: 1.5em;
 	background-color: var(--color-soft-blue);
+	margin-bottom: 1.5em;
 	border-radius: 8px;
 	cursor: pointer;
 }
@@ -27,14 +27,13 @@
 	content: '';
 	position: absolute;
 	inset: 0;
-	margin: auto;
 	background-color: var(--color-cyan-light);
 	background-image: url('/assets/images/icons/view.svg');
 	background-repeat: no-repeat;
 	background-position: center;
 	border-radius: inherit;
-	transition: opacity 0.3s;
 	opacity: 0;
+	transition: opacity 0.3s;
 }
 
 .image:hover::before {
