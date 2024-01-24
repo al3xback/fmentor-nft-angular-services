@@ -13,7 +13,7 @@ export class BaseService {
 		}
 	};
 	challenge = {
-		name: 'NFT',
+		name: 'NFT preview card component',
 		creator: {
 			name: 'Frontend Mentor',
 			link: 'https://www.frontendmentor.io?ref=challenge'
