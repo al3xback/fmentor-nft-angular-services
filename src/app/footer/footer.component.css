@@ -2,19 +2,19 @@
 	position: absolute;
 	left: 0;
 	bottom: 0;
-    display: flex;
+	display: flex;
 	width: 100%;
 	padding: 1em 0;
-	text-align: center;
 	font-size: 0.8em;
+	text-align: center;
 }
 
 .container {
-    flex: auto;
+	flex: auto;
 	display: flex;
 }
 
 p {
-    flex: auto;
-    font-size: inherit;
+	flex: auto;
+	font-size: inherit;
 }
