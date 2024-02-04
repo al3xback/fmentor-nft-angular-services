@@ -19,7 +19,7 @@
 	background-color: var(--color-dark-blue-2);
 	margin: 2.5em 0 3.75em;
 	border-radius: 15px;
-	box-shadow: 0 1.5625em 3.125em rgba(0, 0, 0, 0.1);
+	box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
 }
 
 .image {
@@ -62,6 +62,7 @@
 }
 
 .stats-list-item {
+	gap: 0.48125em;
 	width: 50%;
 	font-size: 0.9375em;
 }
@@ -77,10 +78,10 @@
 
 .stats-list-item i {
 	flex: none;
-	margin-right: 0.48125em;
 }
 
 .author {
+	gap: 1em;
 	padding-top: 1em;
 	margin-top: 1em;
 	border-top: 1px solid var(--color-dark-blue-3);
@@ -90,7 +91,6 @@
 	flex: none;
 	width: 2.0625em;
 	height: auto;
-	margin-right: 1em;
 	border: 1px solid var(--color-white);
 	border-radius: 50%;
 }
