@@ -58,7 +58,7 @@
 }
 
 .desc {
-	margin-bottom: 0.889em;
+	margin-bottom: 1.125em;
 }
 
 .stats-list-item {
@@ -106,6 +106,7 @@
 
 	.desc {
 		margin-bottom: 1.333em;
+		font-size: 1.125em;
 	}
 
 	.stats-list-item,
