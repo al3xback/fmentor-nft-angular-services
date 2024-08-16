@@ -30,7 +30,7 @@
 	cursor: pointer;
 }
 
-.image::before {
+.image::after {
 	content: '';
 	position: absolute;
 	inset: 0;
@@ -43,7 +43,7 @@
 	transition: opacity 0.3s;
 }
 
-.image:hover::before {
+.image:hover::after {
 	opacity: 1;
 }
 
